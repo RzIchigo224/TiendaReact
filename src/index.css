@@ -51,6 +51,7 @@ body{
   font-family: var(--fuentePrincipal);
   font-size: 1.6rem;
   line-height: 2;/*interlineado*/
+  margin: 0;
 }
 
 .contenedor{

@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { db } from './data/db';
+import Categoria from './components/Categoria';
 
 function App() {
   return (
@@ -21,16 +23,8 @@ function App() {
           </div>
         </div>
         <div className="contenedor contenido-principal1">
-          <div className="contenido2">
-            <div>
-              <a href="teclados.html">
-                <img src="teclados.webp" alt="imagen de un teclado" />
-              </a>
-            </div>
-            <h4>Teclados</h4>
-            <h5>Desde $5,000</h5>
-            <h6>Ahorra con mayoreo</h6>
-          </div>
+          
+          <Categoria />
           <div className="contenido2">
             <a href="pantallas.html">
               <img src="pantallas.png" alt="imagen de una pantalla" />
