@@ -11,10 +11,10 @@ function Header() {
             </a>
             <nav className="navegacion">
               <a href="favoritos.html">
-                <img src="img/corazon1.png" alt="imagen de favoritos" />
+                <img src="corazon1.png" alt="imagen de favoritos" />
               </a>
               <a href="perfil.html">
-                <img src="img/persona1.png" alt="imagen de perfil" />
+                <img src="persona1.png" alt="imagen de perfil" />
               </a>
             </nav>
           </div>

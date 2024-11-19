@@ -110,7 +110,7 @@ img {
 /*parametros iniciales*/
 /*header*/
 .header{
-  background-image: url(../IMG/fondo2.png);
+  background-image: url(fondo2.png);
   height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
