@@ -211,7 +211,7 @@ img {
   }
 }
 @media (min-width:768px){
-  .contenido-principal1{
+  .categorias{
       margin-top: 6rem;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

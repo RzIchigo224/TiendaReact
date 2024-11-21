@@ -1,14 +1,18 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import React from 'react'
+import { useState } from "react" 
+import Header from './components/Header'
+import Footer from './components/Footer'
 import { db } from './data/db';
-import Categoria from './components/Categoria';
+import Categoria from './components/Categoria'
 
 function App() {
+
+const [data,setData]=useState(db)
+
   return (
-    <div>
+    <>
       <Header />
-      {/* Aquí puedes incluir el resto del contenido principal */}
+      <div className="contenedor contenido-principal">
       <main className="blog">
         <div className="contenedor__contenido">
           <div className="contenido2">
@@ -22,29 +26,20 @@ function App() {
             <p>Devolución completamente gratis</p>
           </div>
         </div>
-        <div className="contenedor contenido-principal1">
-          
-          <Categoria />
-          <div className="contenido2">
-            <a href="pantallas.html">
-              <img src="pantallas.png" alt="imagen de una pantalla" />
-            </a>
-            <h4>Pantallas</h4>
-            <h5>Desde $10,000</h5>
-            <h6>Aprovecha las ofertas de otoño</h6>
-          </div>
-          <div className="contenido2">
-            <a href="pcs.html">
-              <img src="pcs.png" alt="imagen de una pc" />
-            </a>
-            <h4>Pc de escritorio</h4>
-            <h5>Desde $15,000</h5>
-            <h6>Escoge y nosotros la armamos</h6>
-          </div>
+        
+        <div className="categorias">
+          {data.map((item)=>(
+          <Categoria 
+          key={item.id}
+          Categoria={item}
+          />
+          )
+          )}
         </div>
       </main>
+      </div>
       <Footer />
-    </div>
+      </>
   );
 }
 
